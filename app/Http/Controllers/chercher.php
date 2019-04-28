@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\chercher;
 
 class chercher extends Controller
 {
@@ -34,8 +35,9 @@ class chercher extends Controller
      */
     public function store(Request $request)
     {
-        //
-    }
+        $chercher= new chercher;
+        $chercher->produit1 = $request->input('produit1');
+        
 
     /**
      * Display the specified resource.

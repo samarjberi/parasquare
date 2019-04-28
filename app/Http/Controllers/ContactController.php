@@ -4,15 +4,22 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Contact;
+use App\Http\Request\contactRequest;
+
+
+
 
 class ContactController extends Controller
 {
-    /*public function newContact(){
-        $newContact = new Contact;
 
 
-    }*/
+
+  
+ 
+    
     public function index(){
+        $contact = Contact::all();
+        return view ('list.index' , ['list' => $contact]);
 
     }
     // affiche le formulaire de creation de cv//
@@ -43,5 +50,4 @@ class ContactController extends Controller
     public function destroy(){
         
     }
-
-}
+    }

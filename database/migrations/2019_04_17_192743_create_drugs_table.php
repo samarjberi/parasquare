@@ -15,9 +15,9 @@ class CreateDrugsTable extends Migration
     {
         Schema::create('drugs', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('name');
-            $table->boolval('true');
-            
+             $table->string('produit1');
+             $table->string('adresse');
+             $table->string('disponiblité');
             $table->timestamps();
         });
     }

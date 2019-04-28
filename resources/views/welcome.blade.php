@@ -64,6 +64,42 @@
         </style>
     </head>
     <body>
+   
+             <div class="container">
+@if(isset($details))
+<p> The Search results for your query <b> {{ $query }} </b> are :</p>
+<h2> User details</h2>
+<table class="table table-striped">
+<thead>
+<tr>
+<th>Name</th>
+
+</thead>
+<tbody>
+@foreach($details as $contacts)
+<tr>
+<td>{{$user->name}}</td>
+
+</tr>
+@endforeach
+</tbody>
+</table>
+@endif
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
