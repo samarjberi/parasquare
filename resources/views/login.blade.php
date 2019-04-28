@@ -11,7 +11,7 @@
 
     <!-- Main css -->
     <link rel="stylesheet" href="css/style.css">
-</head>
+</head><>
 <body>
      
 
